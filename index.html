@@ -19,15 +19,36 @@
 		<meta property="og:type" content="website" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/931ee9c604.js" crossorigin="anonymous"></script>
+		
+		<!-- Schema Markup for SEO -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Ahmed Saleh",
+			"jobTitle": "Software Engineer",
+			"url": "https://megzz02.github.io",
+			"sameAs": [
+				"https://www.linkedin.com/in/ahmed-saleh-b335ab24a/",
+				"https://github.com/Megzz02"
+			],
+			"alumniOf": {
+				"@type": "CollegeOrUniversity",
+				"name": "Lancaster University"
+			},
+			"knowsAbout": ["Software Engineering", "React", "PHP", "JavaScript", "Web Development"]
+		}
+		</script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/gradpic.jpg" alt="Ahmed Saleh graduation photo" /></a>
-					<h1><strong>I am Ahmed Saleh</strong>, welcome to my<br />
-					portfolio page<br />
+					<a href="#" class="image avatar"><img src="images/gradpic.jpg" alt="Ahmed Saleh graduation photo" loading="lazy" /></a>
+					<h1><strong>I am Ahmed Saleh</strong>, a Software Engineer<br />
+					passionate about creating innovative<br />
+					digital solutions<br />
 				</div>
 			</header>
 
@@ -77,7 +98,7 @@
 						<h2>Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/curr.jpg" class="image fit thumb"><img src="images/fulls/curr.jpg" alt="Currency Converter App Screenshot" /></a>
+								<a href="images/fulls/curr.jpg" class="image fit thumb"><img src="images/fulls/curr.jpg" alt="Currency Converter App Screenshot" loading="lazy" /></a>
 								<h3>Currency Converter</h3>
 								<p>A web app built with <strong>React and JavaScript</strong> that allows users to seamlessly convert currencies with up-to-date exchange rates. Features real-time API integration and responsive design.</p>
 								<ul class="actions">
@@ -85,7 +106,7 @@
 								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/bouqet.jpg" class="image fit thumb"><img src="images/fulls/bouqet.jpg" alt="The Bouqetists eCommerce Website Screenshot" /></a>
+								<a href="images/fulls/bouqet.jpg" class="image fit thumb"><img src="images/fulls/bouqet.jpg" alt="The Bouqetists eCommerce Website Screenshot" loading="lazy" /></a>
 								<h3>The Bouqetists</h3>
 								<p>An eCommerce flower shop platform developed using <strong>PHP and MySQL</strong>, providing a smooth online shopping experience with user authentication, product catalog, and secure checkout system.</p>
 								<ul class="actions">
@@ -101,6 +122,34 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
+						<p>Feel free to reach out for collaboration opportunities, project discussions, or just to say hello!</p>
+						
+						<!-- Contact Form -->
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="https://formspree.io/f/xpznpqpr">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" placeholder="Your Name" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" placeholder="Your Email" required />
+										</div>
+										<div class="col-12">
+											<input type="text" name="subject" id="subject" placeholder="Subject" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><input type="reset" value="Clear" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
